@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const Box = styled.div`
+  box-sizing: border-box;
+`;
+
+export const Grid = styled(Box)`
   display: grid;
 `;
 
-export const Flex = styled.div`
+export const Flex = styled(Box)`
   display: flex;
 `;
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled(Box)`
   padding: 6.5rem 5.5rem;
 
   ${({ theme }) => theme.mq.small} {
@@ -20,7 +24,7 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const SectionContainer = styled.div`
+export const SectionContainer = styled(Box)`
   padding: 4rem 6rem;
   max-width: 1600px;
 
@@ -33,7 +37,7 @@ export const SectionContainer = styled.div`
   }
 `;
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled(Box)`
   padding: 3.5rem 3rem;
 
   ${({ theme }) => theme.mq.small} {

@@ -30,9 +30,12 @@ export const SecondaryButton = styled.button`
 
 export const NavButton = styled.button`
   background-color: ${({ theme }) => theme.color.yellow};
+  border-radius: 0.5625rem;
   color: ${({ theme }) => theme.color.black};
-  font-size: 1.5rem;
+  cursor: pointer;
   padding: 0.625rem;
+  border-style: none;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.white};
