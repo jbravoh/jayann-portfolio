@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import { Box, Flex } from "../../common/UI/Layout";
+import { Flex, Wrapper } from "../../common/UI/Layout";
 
-export const SectionContainer = styled(Box)<{ isGrey?: boolean }>`
+export const SectionContainer = styled(Wrapper)<{ isGrey?: boolean }>`
   padding: 4rem 6rem;
-  max-width: 1600px;
+  //   margin: 0 auto;
+  //   width: 100%;
+  //   max-width: 1600px;
   background-color: ${({ theme, isGrey }) =>
     isGrey ? theme.color.grey.soft : theme.color.white};
 
@@ -22,6 +24,36 @@ export const SectonWrapper = styled(Flex)`
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
+
+  ${({ theme }) => theme.mq.small} {
+    gap: 1rem;
+  }
+`;
+
+export const Logo = styled.img`
+  width: 100%;
+  height: auto;
+
+  ${({ theme }) => theme.mq.medium} {
+    width: 80%;
+  }
+
+  ${({ theme }) => theme.mq.small} {
+    width: 80%;
+  }
+`;
+
+export const LogoFlex = styled(Flex)`
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  ${({ theme }) => theme.mq.medium} {
+    gap: 1.5rem;
+  }
 
   ${({ theme }) => theme.mq.small} {
     gap: 1rem;

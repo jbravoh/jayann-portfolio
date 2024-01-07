@@ -4,7 +4,7 @@ import { StyledGithubWordmark } from "../../../modules/hero/Hero.style";
 interface Props extends SVGProps<SVGSVGElement> {}
 
 const GithubWordmark = (props: Props) => (
-  <StyledGithubWordmark viewBox="0 0 95 94" {...props}>
+  <StyledGithubWordmark viewBox="0 0 95 94" aria-label="Github logo" {...props}>
     <g>
       <path
         fillRule="evenodd"
