@@ -4,12 +4,14 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./common/theme";
 import NavBar from "./modules/navbar";
 import Hero from "./modules/hero";
+import About from "./modules/sections/about";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
       <Hero />
+      <About />
     </ThemeProvider>
   );
 }

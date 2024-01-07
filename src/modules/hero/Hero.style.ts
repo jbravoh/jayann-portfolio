@@ -4,9 +4,9 @@ import { Box, Flex } from "../../common/UI/Layout";
 export const HeroContainer = styled(Box)`
   padding: 6.5rem 5.5rem;
   height: 100%;
-  //   max-height: 40rem;
   background-color: ${({ theme }) => theme.color.black};
   margin-top: ${({ theme }) => theme.navHeight.large};
+
   ${({ theme }) => theme.mq.medium} {
     padding: 4.5rem 3rem;
   }
@@ -14,6 +14,12 @@ export const HeroContainer = styled(Box)`
   ${({ theme }) => theme.mq.small} {
     padding: 2rem 1rem;
   }
+`;
+
+export const HeroWrapper = styled(Box)`
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 `;
 
 export const CTAFlex = styled(Flex)`

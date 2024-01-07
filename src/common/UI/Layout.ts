@@ -18,6 +18,10 @@ export const Wrapper = styled(Box)`
   margin: 0 auto;
 `;
 
+export const SectionWrapper = styled(Flex)`
+  justfify-content: center;
+`;
+
 export const SectionContainer = styled(Box)`
   padding: 4rem 6rem;
   max-width: 1600px;

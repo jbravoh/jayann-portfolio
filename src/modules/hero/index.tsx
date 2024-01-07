@@ -1,13 +1,18 @@
 import GithubWithTitle from "../../common/UI/SVG/GithubWordmark";
 import { H1, HeroButton } from "../../common/UI";
-import { CTAFlex, HeaderAndIconFlex, HeroContainer, Link } from "./Hero.style";
-import { Wrapper } from "../../common/UI/Layout";
+import {
+  CTAFlex,
+  HeaderAndIconFlex,
+  HeroContainer,
+  HeroWrapper,
+  Link,
+} from "./Hero.style";
 import cv from "../../../public/jayann_bravoharriott_cv.pdf";
 
 const Hero = () => {
   return (
     <HeroContainer>
-      <Wrapper>
+      <HeroWrapper>
         <HeaderAndIconFlex>
           <H1>
             Full-Stack <br /> Software Developer
@@ -26,7 +31,7 @@ const Hero = () => {
             <GithubWithTitle />
           </Link>
         </CTAFlex>
-      </Wrapper>
+      </HeroWrapper>
     </HeroContainer>
   );
 };

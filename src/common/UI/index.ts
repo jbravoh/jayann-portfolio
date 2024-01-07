@@ -1,6 +1,6 @@
 export { Button, SecondaryButton, NavButton, HeroButton } from "./Buttons";
 
-export { Grid, Flex, SectionContainer, FooterContainer } from "./Layout";
+export { Grid, Flex, FooterContainer } from "./Layout";
 
 export { H1, H2, H3, Body } from "./Typography";
 
