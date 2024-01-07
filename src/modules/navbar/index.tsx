@@ -10,7 +10,7 @@ const NavBar = () => {
     <NavContainer isOpen={isOpen}>
       <MobileFlex>
         <NavLogo>Jay-Ann</NavLogo>
-        <Hamburger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+        <Hamburger onClick={() => setIsOpen(!isOpen)}>
           <Line isOpen={isOpen} />
           <Line isOpen={isOpen} />
           <Line isOpen={isOpen} />

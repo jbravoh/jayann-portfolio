@@ -2,13 +2,17 @@ import styled from "styled-components";
 import { H2 } from "../../common/UI";
 import { Flex } from "../../common/UI/Layout";
 
-export const NavContainer = styled(Flex)<{ isOpen: boolean }>`
+type NavProps = {
+  isOpen: boolean;
+};
+
+export const NavContainer = styled(Flex)<NavProps>`
   align-items: center;
   background-color: ${({ theme }) => theme.color.black};
   justify-content: space-between;
   padding: 1.5rem 1.8rem;
   width: 100%;
-  max-height: ${({ isOpen }) => (isOpen ? "100vh" : "5.438rem")};
+  max-height: ${({ isOpen }) => (isOpen ? "40vh" : "5.438rem")};
   transition: max-height 0.3s ease-in-out;
 
   ${({ theme }) => theme.mq.small} {
@@ -25,7 +29,7 @@ export const NavLogo = styled(H2)`
   font-size: 2rem;
 `;
 
-export const Hamburger = styled.div<{ isOpen: boolean }>`
+export const Hamburger = styled.div`
   display: none;
 
   ${({ theme }) => theme.mq.small} {
@@ -37,7 +41,7 @@ export const Hamburger = styled.div<{ isOpen: boolean }>`
   }
 `;
 
-export const Line = styled.div<{ isOpen: boolean }>`
+export const Line = styled.div<NavProps>`
   background-color: ${({ theme }) => theme.color.white};
   height: 3px;
   width: 100%;
@@ -63,17 +67,18 @@ export const Line = styled.div<{ isOpen: boolean }>`
   }
 `;
 
-export const MenuList = styled.ul<{ isOpen: boolean }>`
+export const MenuList = styled.ul<NavProps>`
   display: flex;
   align-items: center;
   gap: 1.8rem;
-  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  transition: transform 0.5s ease;
   transition:
-    transform 0.3s ease-in-out,
-    opacity 0.3s ${({ isOpen }) => (isOpen ? "0.1s" : "0s")};
+    transform 0.3s ease-in-out 0.2s,
+    visibility 0.3s ease-in-out;
 
   ${({ theme }) => theme.mq.small} {
+    visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
   }
