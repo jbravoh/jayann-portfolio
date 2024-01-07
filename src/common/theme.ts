@@ -1,13 +1,11 @@
-const breakpoints = {
-  sm: "40rem",
-  md: "48rem",
-  lg: "64rem",
-};
+import { DefaultTheme } from "styled-components";
 
-export const theme = {
+const breakpoints = ["40rem", "48rem", "64rem"];
+
+export const theme: DefaultTheme = {
   color: {
-    white: "#000000",
-    black: "#FFFFFF",
+    white: "#FFFFFF",
+    black: "#000000",
     yellow: "#FFE500",
     grey: {
       light: "#E8E8E8",
@@ -15,8 +13,8 @@ export const theme = {
     },
   },
   mq: {
-    sm: `(min-width: ${breakpoints.sm})`,
-    md: `(min-width: ${breakpoints.md})`,
-    lg: `(min-width: ${breakpoints.lg})`,
+    small: `@media screen and (max-width: ${breakpoints[0]})`,
+    medium: `@media screen and (max-width: ${breakpoints[1]})`,
+    large: `@media screen and (max-width: ${breakpoints[2]})`,
   },
 };
