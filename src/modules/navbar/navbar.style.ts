@@ -25,7 +25,7 @@ export const NavContainer = styled(Flex)<NavProps>`
     flex-direction: column;
     gap: 2.5rem;
     justify-content: start;
-    padding: 1.5rem 1.8rem 2.5rem;
+    padding: 1.5rem 1.5rem 2.5rem;
     max-height: ${({ isOpen }) => (isOpen ? "100vh" : "5.438rem")};
   }
 `;
@@ -66,7 +66,7 @@ export const Line = styled.div<NavProps>`
 
   &:nth-child(1) {
     transform: ${({ isOpen }) =>
-      isOpen ? "rotate(45deg) translateX(0.35rem)" : "rotate(0)"};
+      isOpen ? "rotate(45deg) translateX(0.30rem)" : "rotate(0)"};
   }
 
   &:nth-child(2) {
@@ -77,7 +77,7 @@ export const Line = styled.div<NavProps>`
 
   &:nth-child(3) {
     transform: ${({ isOpen }) =>
-      isOpen ? "rotate(-45deg) translateX(0.25rem)" : "rotate(0)"};
+      isOpen ? "rotate(-45deg) translateX(0.30rem)" : "rotate(0)"};
   }
 `;
 

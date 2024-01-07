@@ -12,7 +12,7 @@ export const HeroContainer = styled(Box)`
   }
 
   ${({ theme }) => theme.mq.small} {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 `;
 
