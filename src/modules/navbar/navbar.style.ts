@@ -12,8 +12,13 @@ export const NavContainer = styled(Flex)<NavProps>`
   justify-content: space-between;
   padding: 1.5rem 1.8rem;
   width: 100%;
-  max-height: ${({ isOpen }) => (isOpen ? "40vh" : "5.438rem")};
+  height: 100%;
+  max-height: 5.438rem;
+
   transition: max-height 0.3s ease-in-out;
+  z-index: 999;
+  position: fixed;
+  top: 0;
 
   ${({ theme }) => theme.mq.small} {
     align-items: center;
@@ -21,22 +26,31 @@ export const NavContainer = styled(Flex)<NavProps>`
     gap: 2.5rem;
     justify-content: start;
     padding: 1.5rem 1.8rem 2.5rem;
+    max-height: ${({ isOpen }) => (isOpen ? "100vh" : "5.438rem")};
   }
 `;
 
 export const NavLogo = styled(H2)`
   color: ${({ theme }) => theme.color.white};
   font-size: 2rem;
+
+  ${({ theme }) => theme.mq.small} {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Hamburger = styled.div`
   display: none;
+  height: 100%;
 
   ${({ theme }) => theme.mq.small} {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.3rem;
-    width: 1.5rem;
+    width: 1.5rem; // Width of the hamburger
+    height: 1.5rem;
+
     cursor: pointer;
   }
 `;
@@ -52,7 +66,7 @@ export const Line = styled.div<NavProps>`
 
   &:nth-child(1) {
     transform: ${({ isOpen }) =>
-      isOpen ? "rotate(45deg) translateY(0.35rem)" : "rotate(0)"};
+      isOpen ? "rotate(45deg) translateX(0.35rem)" : "rotate(0)"};
   }
 
   &:nth-child(2) {
@@ -63,7 +77,7 @@ export const Line = styled.div<NavProps>`
 
   &:nth-child(3) {
     transform: ${({ isOpen }) =>
-      isOpen ? "rotate(-45deg) translateY(-0.35rem)" : "rotate(0)"};
+      isOpen ? "rotate(-45deg) translateX(0.25rem)" : "rotate(0)"};
   }
 `;
 
@@ -89,16 +103,23 @@ export const MenuItem = styled.li`
   list-style-type: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  // border-bottom: 2px solid transparent;
+  // padding-bottom: 0.2rem;
 
   &:hover {
     color: ${({ theme }) => theme.color.yellow};
   }
+
+  // &:active {
+  //   border-bottom: 2px solid ${({ theme }) => theme.color.yellow};
+  // }
 `;
 
 export const MobileFlex = styled(Flex)`
-  align-items: center;
   ${({ theme }) => theme.mq.small} {
     width: 100%;
+    align-items: center;
     justify-content: space-between;
   }
 `;

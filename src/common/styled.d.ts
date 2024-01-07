@@ -17,5 +17,9 @@ declare module "styled-components" {
       medium: string;
       large: string;
     };
+    navHeight: {
+      small: string;
+      large: string;
+    };
   }
 }

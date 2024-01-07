@@ -1,6 +1,6 @@
 import { DefaultTheme } from "styled-components";
 
-const breakpoints = ["40rem", "48rem", "64rem"];
+const breakpoints = ["40rem", "52rem", "64rem"];
 
 export const theme: DefaultTheme = {
   color: {
@@ -16,5 +16,9 @@ export const theme: DefaultTheme = {
     small: `@media screen and (max-width: ${breakpoints[0]})`,
     medium: `@media screen and (max-width: ${breakpoints[1]})`,
     large: `@media screen and (max-width: ${breakpoints[2]})`,
+  },
+  navHeight: {
+    small: "5.438rem",
+    large: "5.438rem",
   },
 };

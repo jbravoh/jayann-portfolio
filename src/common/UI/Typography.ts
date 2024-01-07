@@ -2,8 +2,16 @@ import styled from "styled-components";
 
 export const H1 = styled.h1`
   color: ${({ theme }) => theme.color.yellow};
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
+
+  ${({ theme }) => theme.mq.medium} {
+    font-size: 3rem;
+  }
+
+  ${({ theme }) => theme.mq.small} {
+    font-size: 2rem;
+  }
 `;
 
 export const H2 = styled.h2`

@@ -12,16 +12,10 @@ export const Flex = styled(Box)`
   display: flex;
 `;
 
-export const HeroContainer = styled(Box)`
-  padding: 6.5rem 5.5rem;
-
-  ${({ theme }) => theme.mq.small} {
-    padding: 4.5rem 3rem;
-  }
-
-  ${({ theme }) => theme.mq.small} {
-    padding: 2rem 1rem;
-  }
+export const Wrapper = styled(Box)`
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 `;
 
 export const SectionContainer = styled(Box)`

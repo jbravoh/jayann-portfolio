@@ -1,11 +1,6 @@
 import { Body, NavButton } from "../../../common/UI";
 import { Box } from "../../../common/UI/Layout";
-import {
-  MenuItem,
-  MenuList,
-  // MobileMenuList,
-  // MobileNavContainer,
-} from "../navbar.style";
+import { MenuItem, MenuList } from "../navbar.style";
 
 type NavMenuProps = {
   isOpen: boolean;
@@ -27,9 +22,7 @@ const NavMenu = ({ isOpen }: NavMenuProps) => {
           return (
             <Box key={item.id}>
               {isButton ? (
-                <NavButton>
-                  <Body fontWeight="bold">{item.label}</Body>
-                </NavButton>
+                <NavButton>{item.label}</NavButton>
               ) : (
                 <MenuItem>
                   <Body fontWeight="bold">{item.label}</Body>
