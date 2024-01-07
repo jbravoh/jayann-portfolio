@@ -2,10 +2,14 @@ import { createRoot } from "react-dom/client";
 import "./App.css";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./common/theme";
-import { Body } from "./common/UI/components"
+import NavBar from "./modules/navbar";
 
 function App() {
-  return <ThemeProvider theme={theme}><Body fontWeight="normal">Hola</Body></ThemeProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <NavBar />
+    </ThemeProvider>
+  );
 }
 
 const container = document.getElementById("root");
