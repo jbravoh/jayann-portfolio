@@ -15,7 +15,9 @@ const Option = styled.div<{ isActive: boolean }>`
     isActive ? theme.color.black : theme.color.grey.light};
   color: ${({ isActive, theme }) =>
     isActive ? theme.color.yellow : theme.color.white};
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 `;
 
 type ToggleVariant = "professional" | "personal";
