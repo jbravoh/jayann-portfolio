@@ -19,22 +19,41 @@ const Projects = () => {
         <SectonWrapper>
           <H2>Projects</H2>
           <Toggle isActive={isActive} setIsActive={setIsActive} />
-          <ProjectContainer>
-            <Box>
-              <CimpleMockup />
-            </Box>
-            <ProjectInfoContainer>
-              <H3>Cimple</H3>
-              <Body fontWeight="normal">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                eleifend ex arcu, id sodales metus placerat et. Donec non turpis
-                felis. Pellentesque sed malesuada lacus.Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Quisque eleifend ex arcu, id
-                sodales metus placerat et. Donec non turpis felis. Pellentesque
-                sed malesuada lacus.
-              </Body>
-            </ProjectInfoContainer>
-          </ProjectContainer>
+          {isActive === "professional" ? (
+            <ProjectContainer>
+              <Box>
+                <CimpleMockup />
+              </Box>
+              <ProjectInfoContainer>
+                <H3>Cimple</H3>
+                <Body fontWeight="normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque eleifend ex arcu, id sodales metus placerat et. Donec
+                  non turpis felis. Pellentesque sed malesuada lacus.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Quisque eleifend
+                  ex arcu, id sodales metus placerat et. Donec non turpis felis.
+                  Pellentesque sed malesuada lacus.
+                </Body>
+              </ProjectInfoContainer>
+            </ProjectContainer>
+          ) : (
+            <ProjectContainer>
+              <Box>
+                <CimpleMockup />
+              </Box>
+              <ProjectInfoContainer>
+                <H3>Test</H3>
+                <Body fontWeight="normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque eleifend ex arcu, id sodales metus placerat et. Donec
+                  non turpis felis. Pellentesque sed malesuada lacus.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Quisque eleifend
+                  ex arcu, id sodales metus placerat et. Donec non turpis felis.
+                  Pellentesque sed malesuada lacus.
+                </Body>
+              </ProjectInfoContainer>
+            </ProjectContainer>
+          )}
         </SectonWrapper>
       </Wrapper>
     </SectionContainer>
