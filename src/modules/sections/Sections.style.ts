@@ -46,6 +46,11 @@ export const Logo = styled.img`
   }
 `;
 
+export const LogoProjects = styled.img`
+  width: 70%;
+  height: auto;
+`;
+
 export const LogoFlex = styled(Flex)`
   flex-direction: row;
   flex-wrap: wrap;
@@ -63,10 +68,27 @@ export const LogoFlex = styled(Flex)`
   }
 `;
 
+export const LogoFlexProjects = styled(Flex)`
+  gap: 0;
+  margin: 0 0 0.5rem;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const ProjectContainer = styled(Flex)`
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 2rem;
   gap: 2rem;
+  width: 100%;
+
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+  }
 `;
 
 export const ProjectInfoContainer = styled(Flex)`
@@ -74,11 +96,21 @@ export const ProjectInfoContainer = styled(Flex)`
   justify-content: flex-start;
   align-items: start;
   gap: 1rem;
+  max-width: 40rem;
+  width: 100%;
+
+  @media screen and (max-width: 1250px) {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
 `;
 
 export const StyledCimpleMockup = styled.svg`
-  width: 41.563rem;
-  height: 24.063rem;
+  // width: 41.563rem;
+  // height: 24.063rem;
+  width: 100%;
+  height: auto;
   fill: ${({ theme }) => theme.color.white};
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -88,7 +120,7 @@ export const StyledCimpleMockup = styled.svg`
   }
 
   ${({ theme }) => theme.mq.small} {
-    width: 61px;
-    height: 60px;
+    width: 100%;
+    height: auto;
   }
 `;

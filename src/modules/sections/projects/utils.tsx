@@ -109,3 +109,59 @@ export const techLogos = [
     alt: "wordpress logo",
   },
 ];
+
+export const cimpleTech = [
+  {
+    name: "typescript",
+    path: typescript,
+    alt: "typescript logo",
+  },
+  {
+    name: "react",
+    path: react,
+    alt: "react logo",
+  },
+  {
+    name: "next.js",
+    path: nextjs,
+    alt: "next.js logo",
+  },
+  {
+    name: "elixir",
+    path: elixir,
+    alt: "elixir logo",
+  },
+  {
+    name: "phoenix",
+    path: phoenix,
+    alt: "phoenix logo",
+  },
+  {
+    name: "graphql",
+    path: graphql,
+    alt: "graphql logo",
+  },
+  {
+    name: "postgresql",
+    path: postgresql,
+    alt: "postgresql logo",
+  },
+  {
+    name: "aws",
+    path: aws,
+    alt: "aws logo",
+  },
+];
+
+export const vibeLifeTech = [
+  {
+    name: "figma",
+    path: figma,
+    alt: "figma logo",
+  },
+  {
+    name: "wordpress",
+    path: wordpress,
+    alt: "wordpress logo",
+  },
+];

@@ -15,17 +15,19 @@ export const Button = styled.button`
   }
 `;
 
-export const SecondaryButton = styled.button`
+export const SecondaryButton = styled.a`
   background-color: ${({ theme }) => theme.color.yellow};
-  border: 1px solid ${({ theme }) => theme.color.black};
-  color: ${({ theme }) => theme.color.white};
-  font-size: 1.25rem;
-  padding: 1rem;
-  border-style: none;
+  border: 2px solid ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.black};
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.88rem;
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.black};
-    border: none;
     color: ${({ theme }) => theme.color.white};
   }
 `;
