@@ -6,6 +6,7 @@ import NavBar from "./modules/navbar";
 import Hero from "./modules/hero";
 import About from "./modules/sections/about";
 import Technology from "./modules/sections/technology";
+import Projects from "./modules/sections/projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Technology />
+      <Projects />
     </ThemeProvider>
   );
 }

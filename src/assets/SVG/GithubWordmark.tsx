@@ -1,5 +1,5 @@
 import { SVGProps } from "react";
-import { StyledGithubWordmark } from "../../../modules/hero/Hero.style";
+import { StyledGithubWordmark } from "../../modules/hero/Hero.style";
 
 interface Props extends SVGProps<SVGSVGElement> {}
 

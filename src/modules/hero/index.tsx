@@ -1,4 +1,4 @@
-import GithubWithTitle from "../../common/UI/SVG/GithubWordmark";
+import GithubWithTitle from "../../assets/SVG/GithubWordmark";
 import { H1, HeroButton } from "../../common/UI";
 import {
   CTAFlex,

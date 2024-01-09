@@ -1,11 +1,12 @@
-import { useState } from "react";
 import styled from "styled-components";
+import { Flex } from "../Layout";
 
-const ToggleContainer = styled.div`
-  display: flex;
-  border: 1px solid ${({ theme }) => theme.color.white}};
-  border-radius: 20px;
-  overflow: hidden;
+const ToggleContainer = styled(Flex)`
+  border: 1px solid ${({ theme }) => theme.color.white};
+  // overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 `;
 
 const Option = styled.div<{ isActive: boolean }>`
@@ -14,17 +15,29 @@ const Option = styled.div<{ isActive: boolean }>`
   background-color: ${({ isActive, theme }) =>
     isActive ? theme.color.black : theme.color.grey.light};
   color: ${({ isActive, theme }) =>
-    isActive ? theme.color.yellow : theme.color.white};
+    isActive ? theme.color.yellow : theme.color.black};
   transition:
     background-color 0.3s,
     color 0.3s;
+  font-weight: 600;
+
+  &:nth-child(1) {
+    border-radius: 0.3125rem 0rem 0rem 0.3125rem;
+  }
+
+  &:nth-child(2) {
+    border-radius: 0rem 0.3125rem 0.3125rem 0rem;
+  }
 `;
 
-type ToggleVariant = "professional" | "personal";
+export type ToggleVariant = "professional" | "personal";
 
-const Toggle = () => {
-  const [isActive, setIsActive] = useState<ToggleVariant>("professional");
+type ToggleProps = {
+  isActive: ToggleVariant;
+  setIsActive: React.Dispatch<React.SetStateAction<ToggleVariant>>;
+};
 
+const Toggle = ({ isActive, setIsActive }: ToggleProps) => {
   return (
     <ToggleContainer>
       <Option

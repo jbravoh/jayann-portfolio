@@ -5,8 +5,8 @@ import { SectionContainer, SectonWrapper } from "../Sections.style";
 
 const About = () => {
   return (
-    <Wrapper>
-      <SectionContainer>
+    <SectionContainer>
+      <Wrapper>
         <SectonWrapper>
           <H2>About Me</H2>
           <Body fontWeight="normal">
@@ -24,8 +24,8 @@ const About = () => {
             imperdiet rutrum. Vivamus elementum nibh vel arcu varius tincidunt.
           </Body>
         </SectonWrapper>
-      </SectionContainer>
-    </Wrapper>
+      </Wrapper>
+    </SectionContainer>
   );
 };
 

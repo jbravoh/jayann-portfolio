@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Flex, Wrapper } from "../../common/UI/Layout";
+import { Box, Flex } from "../../common/UI/Layout";
 
-export const SectionContainer = styled(Wrapper)<{ isGrey?: boolean }>`
+export const SectionContainer = styled(Box)<{ isGrey?: boolean }>`
   padding: 4rem 6rem;
   //   margin: 0 auto;
   //   width: 100%;
@@ -23,7 +23,10 @@ export const SectonWrapper = styled(Flex)`
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
-  text-align: center;
+
+  ${({ theme }) => theme.mq.medium} {
+    text-align: center;
+  }
 
   ${({ theme }) => theme.mq.small} {
     gap: 1rem;
@@ -57,5 +60,35 @@ export const LogoFlex = styled(Flex)`
 
   ${({ theme }) => theme.mq.small} {
     gap: 1rem;
+  }
+`;
+
+export const ProjectContainer = styled(Flex)`
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+`;
+
+export const ProjectInfoContainer = styled(Flex)`
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 1rem;
+`;
+
+export const StyledCimpleMockup = styled.svg`
+  width: 41.563rem;
+  height: 24.063rem;
+  fill: ${({ theme }) => theme.color.white};
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    fill: ${({ theme }) => theme.color.yellow};
+  }
+
+  ${({ theme }) => theme.mq.small} {
+    width: 61px;
+    height: 60px;
   }
 `;
