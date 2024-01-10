@@ -18,7 +18,7 @@ export const theme: DefaultTheme = {
     large: `@media screen and (max-width: ${breakpoints[2]})`,
   },
   navHeight: {
-    small: "5.438rem",
+    small: "4.5rem",
     large: "5.438rem",
   },
 };

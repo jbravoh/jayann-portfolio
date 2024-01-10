@@ -14,7 +14,7 @@ export const Flex = styled(Box)`
 
 export const Wrapper = styled(Box)`
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 `;
 

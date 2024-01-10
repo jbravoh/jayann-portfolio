@@ -13,20 +13,23 @@ export const NavContainer = styled(Flex)<NavProps>`
   padding: 1.5rem 1.8rem;
   width: 100%;
   height: 100%;
-  max-height: 5.438rem;
+  max-height: ${({ theme }) => theme.navHeight.large};
 
-  transition: max-height 0.3s ease-in-out;
   z-index: 999;
   position: fixed;
   top: 0;
 
   ${({ theme }) => theme.mq.small} {
+    transition: max-height 0.3s ease-in-out;
     align-items: center;
     flex-direction: column;
     gap: 2.5rem;
     justify-content: start;
     padding: 1.5rem 1.5rem 2.5rem;
-    max-height: ${({ isOpen }) => (isOpen ? "100vh" : "5.438rem")};
+    max-height: ${({ isOpen, theme }) =>
+      isOpen ? "100vh" : theme.navHeight.small};
+
+    ${({ theme }) => theme.navHeight.small}
   }
 `;
 
@@ -84,7 +87,7 @@ export const Line = styled.div<NavProps>`
 export const MenuList = styled.ul<NavProps>`
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.5rem;
   transition:
     transform 0.3s ease-in-out 0.2s,
     visibility 0.3s ease-in-out;
