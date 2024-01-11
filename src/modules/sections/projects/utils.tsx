@@ -165,3 +165,39 @@ export const vibeLifeTech = [
     alt: "wordpress logo",
   },
 ];
+
+export const portfolioTech = [
+  {
+    name: "figma",
+    path: figma,
+    alt: "figma logo",
+  },
+  {
+    name: "react",
+    path: react,
+    alt: "react logo",
+  },
+];
+
+export const experienceTech = [
+  {
+    name: "figma",
+    path: figma,
+    alt: "figma logo",
+  },
+  {
+    name: "css3",
+    path: css3,
+    alt: "css3 logo",
+  },
+  {
+    name: "react",
+    path: react,
+    alt: "react logo",
+  },
+  {
+    name: "mongodb",
+    path: mongodb,
+    alt: "mongodb logo",
+  },
+];
