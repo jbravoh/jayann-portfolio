@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box, Flex } from "../../common/UI/Layout";
+import { Box, Flex, Wrapper } from "../../common/UI/Layout";
 
 export const SectionContainer = styled(Box)<{ isGrey?: boolean }>`
   padding: 4rem 6rem;
@@ -28,6 +28,10 @@ export const SectonWrapper = styled(Flex)`
   ${({ theme }) => theme.mq.small} {
     gap: 1rem;
   }
+`;
+
+export const ContactWrapper = styled(Wrapper)`
+  max-width: 60rem;
 `;
 
 export const Logo = styled.img`

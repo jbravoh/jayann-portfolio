@@ -3,15 +3,17 @@ import styled from "styled-components";
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.color.black};
   color: ${({ theme }) => theme.color.white};
-  font-size: 1.5rem
-  padding: 1.25rem;
-  border-style: none;
+  border: 2px solid ${({ theme }) => theme.color.black};
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.87619rem;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.yellow};
     border: 1px solid ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.black};
-   
   }
 `;
 
@@ -22,7 +24,7 @@ export const SecondaryButton = styled.a`
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem;
-  border-radius: 0.88rem;
+  border-radius: 0.87619rem;
   cursor: pointer;
   text-decoration: none;
 
