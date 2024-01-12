@@ -140,7 +140,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View Github
+                      View Github Repo
                     </SecondaryButton>
                   </ProjectInfoContainer>
                 </ProjectContainer>
@@ -172,7 +172,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View Github
+                      View Github Repo
                     </SecondaryButton>
                   </ProjectInfoContainer>
                 </ProjectContainer>
