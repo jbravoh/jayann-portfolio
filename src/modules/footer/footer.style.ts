@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Box, Flex } from "../../common/UI/Layout";
+
 import { NavLogo } from "../navbar/navbar.style";
-import { Body, Link } from "../../common/UI";
+import { Body, Box, Flex, Link } from "../../common/UI";
 
 export const FooterContainer = styled(Box)`
   padding: 2rem 1.5rem;

@@ -52,20 +52,6 @@ export const StyledGithubWordmark = styled.svg`
   }
 `;
 
-// export const StyledCodeIcon = styled.svg`
-//   width: 324px;
-//   height: 208px;
-//   fill: ${({ theme }) => theme.color.white};
-//   cursor: pointer;
-
-//   //   ${({ theme }) => theme.mq.small} {
-//   //     width: 61px;
-//   //     height: 60px;
-//   //   }
-// `;
-
 export const HeaderAndIconFlex = styled(Flex)`
   justify-content: space-between;
 `;
-
-export const Link = styled.a``;

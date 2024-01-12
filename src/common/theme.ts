@@ -10,6 +10,7 @@ export const theme: DefaultTheme = {
     grey: {
       light: "#E8E8E8",
       soft: "#F9F9F9",
+      medium: "#969696",
     },
   },
   mq: {

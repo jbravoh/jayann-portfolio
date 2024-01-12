@@ -10,6 +10,7 @@ declare module "styled-components" {
       grey: {
         light: string;
         soft: string;
+        medium: string;
       };
     };
     mq: {

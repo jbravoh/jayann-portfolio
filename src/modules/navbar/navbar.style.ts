@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { H2 } from "../../common/UI";
-import { Flex } from "../../common/UI/Layout";
+import { Box, Flex, H2, Link } from "../../common/UI";
 
 type NavProps = {
   isOpen: boolean;
@@ -87,6 +86,7 @@ export const Line = styled.div<NavProps>`
 export const MenuList = styled.ul<NavProps>`
   display: flex;
   align-items: center;
+  height: 100%;
   gap: 1.5rem;
   transition:
     transform 0.3s ease-in-out 0.2s,
@@ -107,16 +107,10 @@ export const MenuItem = styled.li`
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   box-sizing: border-box;
-  // border-bottom: 2px solid transparent;
-  // padding-bottom: 0.2rem;
 
   &:hover {
     color: ${({ theme }) => theme.color.yellow};
   }
-
-  // &:active {
-  //   border-bottom: 2px solid ${({ theme }) => theme.color.yellow};
-  // }
 `;
 
 export const MobileFlex = styled(Flex)`
@@ -124,5 +118,23 @@ export const MobileFlex = styled(Flex)`
     width: 100%;
     align-items: center;
     justify-content: space-between;
+  }
+`;
+
+export const NavLink = styled(Link)`
+  color: ${({ theme }) => theme.color.white};
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.yellow};
+  }
+`;
+
+export const NavButtonContainer = styled(Box)`
+  ${({ theme }) => theme.mq.small} {
+    margin-top: 0.5rem;
   }
 `;

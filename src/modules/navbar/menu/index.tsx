@@ -1,18 +1,28 @@
-import { Body, NavButton } from "../../../common/UI";
-import { Box } from "../../../common/UI/Layout";
-import { MenuItem, MenuList } from "../navbar.style";
+import { NavButton, Box } from "../../../common/UI";
+
+import { menuItems } from "../../../utils";
+import {
+  MenuItem,
+  MenuList,
+  NavButtonContainer,
+  NavLink,
+} from "../navbar.style";
 
 type NavMenuProps = {
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const NavMenu = ({ isOpen }: NavMenuProps) => {
-  const menuItems = [
-    { label: "About", id: "about" },
-    { label: "Technology", id: "technology" },
-    { label: "Projects", id: "projects" },
-    { label: "Contact", id: "contact" },
-  ];
+const NavMenu = ({ isOpen, setIsOpen }: NavMenuProps) => {
+  const handleEmailClick = () => {
+    const email = "jbravoharriott@gmail.com";
+
+    window.location.href = `mailto:${email}`;
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -22,10 +32,16 @@ const NavMenu = ({ isOpen }: NavMenuProps) => {
           return (
             <Box key={item.id}>
               {isButton ? (
-                <NavButton>{item.label}</NavButton>
+                <NavButtonContainer>
+                  <NavButton href="#contact" onClick={handleEmailClick}>
+                    {item.label}
+                  </NavButton>
+                </NavButtonContainer>
               ) : (
                 <MenuItem>
-                  <Body fontWeight="bold">{item.label}</Body>
+                  <NavLink href={`#${item.id}`} onClick={handleLinkClick}>
+                    {item.label}
+                  </NavLink>
                 </MenuItem>
               )}
             </Box>

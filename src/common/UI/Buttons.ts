@@ -3,23 +3,24 @@ import styled from "styled-components";
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.color.black};
   color: ${({ theme }) => theme.color.white};
-  border: 2px solid ${({ theme }) => theme.color.black};
+  border: 0.15rem solid ${({ theme }) => theme.color.black};
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem;
   text-decoration: none;
   border-radius: 0.87619rem;
+  cursor: pointer;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.yellow};
-    border: 1px solid ${({ theme }) => theme.color.black};
+    border: 0.15rem solid ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.black};
   }
 `;
 
 export const SecondaryButton = styled.a`
   background-color: ${({ theme }) => theme.color.yellow};
-  border: 2px solid ${({ theme }) => theme.color.black};
+  border: 0.15rem solid ${({ theme }) => theme.color.black};
   color: ${({ theme }) => theme.color.black};
   font-weight: 600;
   font-size: 1rem;
@@ -34,7 +35,9 @@ export const SecondaryButton = styled.a`
   }
 `;
 
-export const NavButton = styled.button`
+export const NavButton = styled.button.attrs({
+  as: "a",
+})`
   background-color: ${({ theme }) => theme.color.yellow};
   border-radius: 0.5625rem;
   color: ${({ theme }) => theme.color.black};
@@ -44,6 +47,7 @@ export const NavButton = styled.button`
   transition: background-color 0.3s ease-in-out;
   font-size: 1rem;
   font-weight: 700;
+  text-decoration: none;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.white};

@@ -1,11 +1,10 @@
 import GithubWithTitle from "../../assets/SVG/GithubWordmark";
-import { H1, HeroButton } from "../../common/UI";
+import { H1, HeroButton, Link } from "../../common/UI";
 import {
   CTAFlex,
   HeaderAndIconFlex,
   HeroContainer,
   HeroWrapper,
-  Link,
 } from "./Hero.style";
 import cv from "../../../public/jayann_bravoharriott_cv.pdf";
 
@@ -15,9 +14,8 @@ const Hero = () => {
       <HeroWrapper>
         <HeaderAndIconFlex>
           <H1>
-            Full-Stack <br /> Software Developer
+            Full-stack <br /> Software Developer
           </H1>
-          {/* <CodeIcon /> */}
         </HeaderAndIconFlex>
         <CTAFlex>
           <HeroButton href={cv} target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,12 @@
-import { Hamburger, Line, MobileFlex, NavContainer } from "./navbar.style";
+import {
+  Hamburger,
+  Line,
+  MobileFlex,
+  NavContainer,
+  NavLogo,
+} from "./navbar.style";
 import NavMenu from "./menu";
-import { NavLogo } from "./navbar.style";
+
 import { useState } from "react";
 
 const NavBar = () => {
@@ -16,7 +22,7 @@ const NavBar = () => {
           <Line isOpen={isOpen} />
         </Hamburger>
       </MobileFlex>
-      <NavMenu isOpen={isOpen} />
+      <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </NavContainer>
   );
 };

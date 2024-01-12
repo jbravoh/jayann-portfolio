@@ -1,5 +1,6 @@
-import { H2 } from "../../../common/UI";
-import { Box, Wrapper } from "../../../common/UI/Layout";
+import { Box, H2, Wrapper } from "../../../common/UI";
+
+import { techLogos } from "../../../utils";
 
 import {
   Logo,
@@ -7,14 +8,13 @@ import {
   SectionContainer,
   SectonWrapper,
 } from "../Sections.style";
-import { techLogos } from "./utils";
 
 const Technology = () => {
   return (
-    <SectionContainer isGrey>
+    <SectionContainer isGrey id="technology">
       <Wrapper>
         <SectonWrapper>
-          <H2>Technology</H2>
+          <H2>Technologies Used</H2>
           <LogoFlex>
             {techLogos.map((logo) => {
               return (

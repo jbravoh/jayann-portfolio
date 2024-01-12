@@ -7,7 +7,8 @@ import Hero from "./modules/hero";
 import About from "./modules/sections/about";
 import Technology from "./modules/sections/technology";
 import Projects from "./modules/sections/projects";
-import Contact from "./modules/sections/contact";
+
+import Footer from "./modules/footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <About />
       <Technology />
       <Projects />
-      <Contact />
+      <Footer />
     </ThemeProvider>
   );
 }

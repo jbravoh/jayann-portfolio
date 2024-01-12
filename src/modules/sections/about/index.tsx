@@ -1,27 +1,38 @@
-import { Body, H2 } from "../../../common/UI";
-import { Wrapper } from "../../../common/UI/Layout";
+import { Body, H2, Wrapper } from "../../../common/UI";
 
 import { SectionContainer, SectonWrapper } from "../Sections.style";
 
 const About = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="about">
       <Wrapper>
         <SectonWrapper>
-          <H2>About Me</H2>
-          <Body fontWeight="normal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            maximus scelerisque lacus, id egestas augue tristique at. Donec
-            eleifend in velit eu varius. Nulla facilisi. Integer ut laoreet
-            tortor. Mauris non eros viverra neque finibus finibus. Nam fermentum
-            ut risus a viverra. Fusce vehicula tempus felis, non lobortis urna
-            tristique sed.
+          <H2 style={{ textAlign: "center" }}>
+            Hey, I&apos;m Jay-Ann Bravo-Harriott
+          </H2>
+          <Body fontWeight="normal" style={{ textAlign: "center" }}>
+            Welcome to my portfolio!
           </Body>
-          <Body fontWeight="normal">
-            In hac habitasse platea dictumst. Proin rutrum tellus in tellus
-            commodo cursus sit amet ut mauris. Suspendisse in neque dui.
-            Curabitur volutpat sed dolor sit amet elementum. Curabitur dictum
-            imperdiet rutrum. Vivamus elementum nibh vel arcu varius tincidunt.
+          <Body fontWeight="normal" style={{ textAlign: "center" }}>
+            I&apos;m a Full-stack developer with over two years of professional
+            experience in crafting user-focused web and mobile applications.
+            Currently, I&apos;m making strides at Cimple, where I&apos;m
+            developing a B2B procurement platform, which as you guessed it, is a
+            platform that simplifies procurement and makes it accessible for
+            everyone.
+          </Body>
+
+          <Body fontWeight="normal" style={{ textAlign: "center" }}>
+            My expertise primarily lies in the JavaScript stack, but my
+            curiosity and creativity drive me to explore new technologies. My
+            unique background as a former international basketball player,
+            combined with my experiences in marketing and design, has shaped my
+            approach to problem-solving and innovation in the tech industry.
+          </Body>
+          <Body fontWeight="normal" style={{ textAlign: "center" }}>
+            Below, you&apos;ll discover a showcase of my projects, highlighting
+            my journey in software development. Feel free to browse, and
+            don&apos;t hesitate to reach out with any questions or thoughts.
           </Body>
         </SectonWrapper>
       </Wrapper>

@@ -1,21 +1,31 @@
-import html5 from "../../../assets/html5-logo.png";
-import css3 from "../../../assets/css3-logo.png";
-import javascript from "../../../assets/javascript-logo.png";
-import typescript from "../../../assets/typescript-logo.png";
-import react from "../../../assets/react-logo.png";
-import reactNative from "../../../assets/react-native-logo.png";
-import nextjs from "../../../assets/nextjs-logo.png";
-import nodejs from "../../../assets/nodejs-logo.png";
-import express from "../../../assets/express-logo.png";
-import elixir from "../../../assets/elixir-logo.png";
-import phoenix from "../../../assets/phoenix-logo.png";
-import graphql from "../../../assets/graphql-logo.png";
-import postgresql from "../../../assets/postgresql-logo.png";
-import mongodb from "../../../assets/mongodb-logo.png";
-import aws from "../../../assets/aws-logo.png";
-import firebase from "../../../assets/firebase-logo.png";
-import figma from "../../../assets/figma-logo.png";
-import wordpress from "../../../assets/wordpress-logo.png";
+import html5 from "./assets/html5-logo.png";
+import css3 from "./assets/css3-logo.png";
+import javascript from "./assets/javascript-logo.png";
+import typescript from "./assets/typescript-logo.png";
+import react from "./assets/react-logo.png";
+import reactNative from "./assets/react-native-logo.png";
+import nextjs from "./assets/nextjs-logo.png";
+import nodejs from "./assets/nodejs-logo.png";
+import express from "./assets/express-logo.png";
+import elixir from "./assets/elixir-logo.png";
+import phoenix from "./assets/phoenix-logo.png";
+import graphql from "./assets/graphql-logo.png";
+import postgresql from "./assets/postgresql-logo.png";
+import mongodb from "./assets/mongodb-logo.png";
+import aws from "./assets/aws-logo.png";
+import firebase from "./assets/firebase-logo.png";
+import figma from "./assets/figma-logo.png";
+import wordpress from "./assets/wordpress-logo.png";
+import styledComponents from "./assets/styled-components-logo.png";
+import cypress from "./assets/cypress-logo.png";
+import expo from "./assets/expo-logo.png";
+
+export const menuItems = [
+  { label: "About", id: "about" },
+  { label: "Technology", id: "technology" },
+  { label: "Projects", id: "projects" },
+  { label: "Contact", id: "contact" },
+];
 
 export const techLogos = [
   {
@@ -27,6 +37,11 @@ export const techLogos = [
     name: "css3",
     path: css3,
     alt: "css3 logo",
+  },
+  {
+    name: "styled components",
+    path: styledComponents,
+    alt: "styled components logo",
   },
   {
     name: "javascript",
@@ -52,6 +67,11 @@ export const techLogos = [
     name: "next.js",
     path: nextjs,
     alt: "next.js logo",
+  },
+  {
+    name: "cypress",
+    path: cypress,
+    alt: "cypress logo",
   },
   {
     name: "node.js",
@@ -99,6 +119,11 @@ export const techLogos = [
     alt: "firebase logo",
   },
   {
+    name: "expo",
+    path: expo,
+    alt: "expo logo",
+  },
+  {
     name: "figma",
     path: figma,
     alt: "figma logo",
@@ -115,11 +140,6 @@ export const cimpleTech = [
     name: "typescript",
     path: typescript,
     alt: "typescript logo",
-  },
-  {
-    name: "react",
-    path: react,
-    alt: "react logo",
   },
   {
     name: "next.js",
@@ -151,6 +171,16 @@ export const cimpleTech = [
     path: aws,
     alt: "aws logo",
   },
+  {
+    name: "styled components",
+    path: styledComponents,
+    alt: "styled components logo",
+  },
+  {
+    name: "cypress",
+    path: cypress,
+    alt: "cypress logo",
+  },
 ];
 
 export const vibeLifeTech = [
@@ -176,6 +206,11 @@ export const portfolioTech = [
     name: "react",
     path: react,
     alt: "react logo",
+  },
+  {
+    name: "styled components",
+    path: styledComponents,
+    alt: "styled components logo",
   },
 ];
 

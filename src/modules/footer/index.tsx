@@ -1,7 +1,7 @@
 import Github from "../../assets/SVG/Github";
 import LinkedIn from "../../assets/SVG/LinkedIn";
-import { Box } from "../../common/UI/Layout";
-import { Link } from "../../common/UI/Link";
+import { Box, Link } from "../../common/UI";
+
 import {
   FooterContainer,
   FooterDescription,

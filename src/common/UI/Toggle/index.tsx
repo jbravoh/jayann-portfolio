@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { Flex } from "../Layout";
+import { Flex } from "..";
 
 const ToggleContainer = styled(Flex)`
   border: 1px solid ${({ theme }) => theme.color.white};
-  // overflow: hidden;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
@@ -15,7 +14,7 @@ const Option = styled.div<{ isActive: boolean }>`
   background-color: ${({ isActive, theme }) =>
     isActive ? theme.color.black : theme.color.grey.light};
   color: ${({ isActive, theme }) =>
-    isActive ? theme.color.yellow : theme.color.black};
+    isActive ? theme.color.yellow : theme.color.grey.medium};
   transition:
     background-color 0.3s,
     color 0.3s;
