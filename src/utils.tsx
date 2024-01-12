@@ -51,7 +51,7 @@ export const techLogos = [
   {
     name: "typescript",
     path: typescript,
-    alt: "typescript logo",
+    alt: "typeScript logo",
   },
   {
     name: "react",
@@ -139,7 +139,7 @@ export const cimpleTech = [
   {
     name: "typescript",
     path: typescript,
-    alt: "typescript logo",
+    alt: "typeScript logo",
   },
   {
     name: "next.js",
@@ -201,6 +201,11 @@ export const portfolioTech = [
     name: "figma",
     path: figma,
     alt: "figma logo",
+  },
+  {
+    name: "typescript",
+    path: typescript,
+    alt: "typeScript logo",
   },
   {
     name: "react",

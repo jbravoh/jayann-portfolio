@@ -51,7 +51,7 @@ const Projects = () => {
                     <H3>Cimple</H3>
                     <Body fontWeight="normal">
                       I&apos;m currently a Full-stack developer at Cimple and we
-                      use Typescript, Next.js, Styled Components, Cypress,
+                      use TypeScript, Next.js, Styled Components, Cypress,
                       Elixir, Phoenix, GraphQL, PostgreSQL and AWS. Cimple
                       understands the complexities in procurement and has
                       created a B2B procurement platform that aims to make it
@@ -122,9 +122,9 @@ const Projects = () => {
                     <H3>Portfolio</H3>
                     <Body fontWeight="normal">
                       My portfolio was designed with Figma and created using
-                      React and Styled Components. Here I wanted to emphasise
-                      the responsiveness of this web application as it is
-                      suitable for both phone, tablet and desktop.
+                      TypeScript, React and Styled Components. Here I wanted to
+                      emphasise the responsiveness of this web application as it
+                      is suitable for both phone, tablet and desktop.
                     </Body>
                     <LogoFlexProjects>
                       {portfolioTech.map((logo) => {
