@@ -67,6 +67,24 @@ export const FooterLink = styled(Link)`
   }
 `;
 
+export const FooterButton = styled.button`
+  color: ${({ theme }) => theme.color.white};
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.yellow};
+  }
+
+  ${({ theme }) => theme.mq.small} {
+    font-size: 0.875rem;
+  }
+`;
+
 export const FooterDescription = styled(Body)`
   ${({ theme }) => theme.mq.medium} {
     text-align: center;

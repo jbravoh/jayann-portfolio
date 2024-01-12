@@ -3,6 +3,7 @@ import LinkedIn from "../../assets/SVG/LinkedIn";
 import { Box, Link } from "../../common/UI";
 
 import {
+  FooterButton,
   FooterContainer,
   FooterDescription,
   FooterLink,
@@ -13,6 +14,12 @@ import {
 } from "./footer.style";
 
 const Footer = () => {
+  const handleEmailClick = () => {
+    const email = "jbravoharriott@gmail.com";
+
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -29,7 +36,7 @@ const Footer = () => {
           <FooterLink href="#about">About</FooterLink>
           <FooterLink href="#technology">Technology</FooterLink>
           <FooterLink href="#projects">Projects</FooterLink>
-          <FooterLink href="#contact">Contact</FooterLink>
+          <FooterButton onClick={handleEmailClick}>Contact</FooterButton>
         </LinkContainer>
         <LogoContainer>
           <Link
