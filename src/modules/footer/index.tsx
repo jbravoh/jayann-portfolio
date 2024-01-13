@@ -29,7 +29,7 @@ const Footer = () => {
             fontWeight="normal"
             style={{ marginTop: "0.5rem" }}
           >
-            Full-stack Developer portfolio.
+            Full-stack Software Developer portfolio.
           </FooterDescription>
         </Box>
         <LinkContainer>
