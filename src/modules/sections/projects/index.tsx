@@ -71,7 +71,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View site
+                      View Site
                     </SecondaryButton>
                   </ProjectInfoContainer>
                 </ProjectContainer>
@@ -107,7 +107,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View site
+                      View Site
                     </SecondaryButton>
                   </ProjectInfoContainer>
                 </ProjectContainer>
