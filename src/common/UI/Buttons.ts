@@ -66,13 +66,13 @@ export const HeroButton = styled.a`
   border-radius: 0.87619rem;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  border: 1px solid ${({ theme }) => theme.color.white};
+  border: 0.15rem solid ${({ theme }) => theme.color.white};
   text-decoration: none;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.yellow};
-    border: 1px solid ${({ theme }) => theme.color.yellow};
+    border: 0.15rem solid ${({ theme }) => theme.color.yellow};
   }
 
   ${({ theme }) => theme.mq.small} {
