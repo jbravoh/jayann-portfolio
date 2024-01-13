@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <NavContainer isOpen={isOpen}>
       <MobileFlex>
-        <NavLogo>Jay-Ann</NavLogo>
+        <NavLogo href="#hero">Jay-Ann</NavLogo>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
           <Line isOpen={isOpen} />
           <Line isOpen={isOpen} />

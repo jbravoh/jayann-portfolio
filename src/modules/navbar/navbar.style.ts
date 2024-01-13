@@ -32,12 +32,20 @@ export const NavContainer = styled(Flex)<NavProps>`
   }
 `;
 
-export const NavLogo = styled(H2)`
+export const NavLogo = styled(H2).attrs({
+  as: "a",
+})`
   color: ${({ theme }) => theme.color.white};
   font-size: 2rem;
+  text-decoration: none;
 
   ${({ theme }) => theme.mq.small} {
     font-size: 1.2rem;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.color.yellow};
+    cursor: pointer;
   }
 `;
 

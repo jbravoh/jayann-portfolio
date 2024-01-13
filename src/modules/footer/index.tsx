@@ -24,7 +24,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrapper>
         <Box>
-          <FooterLogo>Jay-Ann</FooterLogo>
+          <FooterLogo href="#hero">Jay-Ann</FooterLogo>
           <FooterDescription
             fontWeight="normal"
             style={{ marginTop: "0.5rem" }}

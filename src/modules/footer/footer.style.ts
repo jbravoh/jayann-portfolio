@@ -7,6 +7,7 @@ export const FooterContainer = styled(Box)`
   padding: 2rem 1.5rem;
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.black};
+  text-align: center;
 
   ${({ theme }) => theme.mq.medium} {
     padding: 2rem 1.5rem;
@@ -34,7 +35,6 @@ export const FooterWrapper = styled(Flex)`
 
 export const FooterLogo = styled(NavLogo)`
   color: ${({ theme }) => theme.color.yellow};
-  text-align: center;
 
   ${({ theme }) => theme.mq.medium} {
     font-size: 1.5rem;

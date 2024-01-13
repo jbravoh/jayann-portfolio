@@ -10,7 +10,7 @@ import cv from "../../../public/jayann_bravoharriott_cv.pdf";
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="hero">
       <HeroWrapper>
         <HeaderAndIconFlex>
           <H1>
