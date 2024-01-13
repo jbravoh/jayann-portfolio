@@ -1,4 +1,4 @@
-export { Button, SecondaryButton, NavButton, HeroButton } from "./Buttons";
+export { Button, SecondaryButton, NavButton } from "./Buttons";
 
 export { Grid, Flex, Box, Wrapper } from "./Layout";
 

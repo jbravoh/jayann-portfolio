@@ -55,28 +55,28 @@ export const NavButton = styled.button.attrs({
   }
 `;
 
-export const HeroButton = styled.a`
-  background-color: ${({ theme }) => theme.color.white};
-  color: ${({ theme }) => theme.color.black};
-  font-size: 1rem;
-  font-weight: 700;
-  height: 100%;
-  padding: 1rem;
-  border-style: none;
-  border-radius: 0.87619rem;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  border: 0.15rem solid ${({ theme }) => theme.color.white};
-  text-decoration: none;
+// export const HeroButton = styled.a`
+//   background-color: ${({ theme }) => theme.color.white};
+//   color: ${({ theme }) => theme.color.black};
+//   font-size: 1rem;
+//   font-weight: 700;
+//   height: 100%;
+//   padding: 1rem;
+//   border-style: none;
+//   border-radius: 0.87619rem;
+//   cursor: pointer;
+//   transition: transform 0.3s ease-in-out;
+//   border: 0.15rem solid ${({ theme }) => theme.color.white};
+//   text-decoration: none;
 
-  &:hover {
-    background-color: ${({ theme }) => theme.color.black};
-    color: ${({ theme }) => theme.color.yellow};
-    border: 0.15rem solid ${({ theme }) => theme.color.yellow};
-  }
+//   &:hover {
+//     background-color: ${({ theme }) => theme.color.black};
+//     color: ${({ theme }) => theme.color.yellow};
+//     border: 0.15rem solid ${({ theme }) => theme.color.yellow};
+//   }
 
-  ${({ theme }) => theme.mq.small} {
-    font-size: 0.75rem;
-    padding: 0.75rem;
-  }
-`;
+//   ${({ theme }) => theme.mq.small} {
+//     font-size: 0.75rem;
+//     padding: 0.75rem;
+//   }
+// `;
