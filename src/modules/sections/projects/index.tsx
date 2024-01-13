@@ -90,7 +90,7 @@ const Projects = () => {
                       deprived communities. I designed and built this website
                       using Figma and Wordpress to accommodate the business
                       needs, with the user experience at the heart of the
-                      process. This is work in progress and will progress as the
+                      process. This is work in progress and will develop as the
                       business grows.
                     </Body>
                     <LogoFlexProjects>
