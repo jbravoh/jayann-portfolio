@@ -12,10 +12,18 @@ import { useState } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  const handleNavIsOpen = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <NavContainer isOpen={isOpen}>
       <MobileFlex>
-        <NavLogo href="#hero">Jay-Ann</NavLogo>
+        <NavLogo href="#hero" onClick={handleNavIsOpen}>
+          Jay-Ann
+        </NavLogo>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
           <Line isOpen={isOpen} />
           <Line isOpen={isOpen} />

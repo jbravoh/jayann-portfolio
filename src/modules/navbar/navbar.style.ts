@@ -28,7 +28,7 @@ export const NavContainer = styled(Flex)<NavProps>`
     max-height: ${({ isOpen, theme }) =>
       isOpen ? "100vh" : theme.navHeight.small};
 
-    ${({ theme }) => theme.navHeight.small}
+    ${({ theme }) => theme.navHeight.small};
   }
 `;
 
@@ -38,14 +38,10 @@ export const NavLogo = styled(H2).attrs({
   color: ${({ theme }) => theme.color.white};
   font-size: 2rem;
   text-decoration: none;
+  cursor: pointer;
 
   ${({ theme }) => theme.mq.small} {
     font-size: 1.2rem;
-  }
-
-  &:hover {
-    color: ${({ theme }) => theme.color.yellow};
-    cursor: pointer;
   }
 `;
 
