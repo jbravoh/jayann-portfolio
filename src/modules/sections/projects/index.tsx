@@ -41,7 +41,7 @@ const Projects = () => {
     {
       title: "Cimple",
       description:
-        "I worked as a Full-stack Developer at Cimple, a B2B procurement platform that simplifies procurement for businesses. Using TypeScript, Next.js, Styled Components, Cypress, Elixir, Phoenix, GraphQL, PostgreSQL and AWS, I built features for the procurement opportunity lifecycle—from creation and supplier applications through to evaluation and contract awarding. I occasionally take on additional contract work for Cimple when availability allows.",
+        "I worked as a Full-stack Developer at Cimple, a B2B procurement platform that simplifies procurement for businesses. Using TypeScript, Next.js, Styled Components, Cypress, Node.js, Elixir, Phoenix, GraphQL, PostgreSQL and AWS, I built features for the procurement opportunity lifecycle—from creation and supplier applications through to evaluation and contract awarding. I occasionally take on additional contract work for Cimple when availability allows.",
       tech: cimpleTech,
       mockup: CimpleMockup,
       href: "https://cimple.uk/",
