@@ -68,6 +68,7 @@ export const LogoFlex = styled(Flex)`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   gap: 2rem;
   margin: 2rem 0;
 
@@ -89,39 +90,25 @@ export const LogoFlexProjects = styled(Flex)`
 `;
 
 export const ProjectContainer = styled(Flex)`
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 2rem 0;
   gap: 2rem;
   width: 100%;
-
-  @media screen and (max-width: 1250px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    text-align: center;
-  }
 `;
 
 export const ProjectInfoContainer = styled(Flex)`
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  max-width: 40rem;
   width: 100%;
-
-  @media screen and (max-width: 1250px) {
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-  }
+  text-align: center;
 `;
 
 export const StyledMultiScreenMockup = styled.img`
   width: 100%;
-  height: auto;
 
   ${({ theme }) => theme.mq.small} {
     width: 100%;

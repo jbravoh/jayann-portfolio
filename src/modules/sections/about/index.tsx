@@ -14,26 +14,16 @@ const About = () => {
             Welcome to my portfolio!
           </Body>
           <Body fontWeight="normal" style={{ textAlign: "center" }}>
-            I&apos;m a Full-stack developer with over two years of professional
-            experience in crafting user-focused web and mobile applications.
-            Currently, I&apos;m making strides at Cimple, where I&apos;m
-            developing a B2B procurement platform, which as you guessed it, is a
-            platform that simplifies procurement and makes it accessible for
-            everyone.
+            I&apos;m a Full-stack Engineer with 3+ years of experience,
+            currently specializing in frontend development at Orbital, a global
+            payments platform. My expertise primarily lies in the JavaScript
+            stack, but my curiosity and creativity drive me to explore new
+            technologies. Below, you&apos;ll discover a showcase of my
+            professional and personal projects, highlighting my journey in
+            software development. Feel free to browse, and don&apos;t hesitate
+            to reach out.
           </Body>
-
-          <Body fontWeight="normal" style={{ textAlign: "center" }}>
-            My expertise primarily lies in the JavaScript stack, but my
-            curiosity and creativity drive me to explore new technologies. My
-            unique background as a former international basketball player,
-            combined with my experiences in marketing and design, has shaped my
-            approach to problem-solving and innovation in the tech industry.
-          </Body>
-          <Body fontWeight="normal" style={{ textAlign: "center" }}>
-            Below, you&apos;ll discover a showcase of my projects, highlighting
-            my journey in software development. Feel free to browse, and
-            don&apos;t hesitate to reach out with any questions or thoughts.
-          </Body>
+          <Body fontWeight="normal" style={{ textAlign: "center" }}></Body>
         </SectonWrapper>
       </Wrapper>
     </SectionContainer>

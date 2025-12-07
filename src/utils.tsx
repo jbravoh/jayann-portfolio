@@ -1,24 +1,29 @@
-import html5 from "./assets/html5-logo.png";
-import css3 from "./assets/css3-logo.png";
-import javascript from "./assets/javascript-logo.png";
-import typescript from "./assets/typescript-logo.png";
-import react from "./assets/react-logo.png";
-import reactNative from "./assets/react-native-logo.png";
-import nextjs from "./assets/nextjs-logo.png";
-import nodejs from "./assets/nodejs-logo.png";
-import express from "./assets/express-logo.png";
-import elixir from "./assets/elixir-logo.png";
-import phoenix from "./assets/phoenix-logo.png";
-import graphql from "./assets/graphql-logo.png";
-import postgresql from "./assets/postgresql-logo.png";
-import mongodb from "./assets/mongodb-logo.png";
-import aws from "./assets/aws-logo.png";
-import firebase from "./assets/firebase-logo.png";
-import figma from "./assets/figma-logo.png";
-import wordpress from "./assets/wordpress-logo.png";
-import styledComponents from "./assets/styled-components-logo.png";
-import cypress from "./assets/cypress-logo.png";
-import expo from "./assets/expo-logo.png";
+import html5 from "./assets/logos/html5-logo.png";
+import css3 from "./assets/logos/css3-logo.png";
+import javascript from "./assets/logos/javascript-logo.png";
+import typescript from "./assets/logos/typescript-logo.png";
+import react from "./assets/logos/react-logo.png";
+import reactNative from "./assets/logos/react-native-logo.png";
+import nextjs from "./assets/logos/nextjs-logo.png";
+import nodejs from "./assets/logos/nodejs-logo.png";
+import express from "./assets/logos/express-logo.png";
+import elixir from "./assets/logos/elixir-logo.png";
+import phoenix from "./assets/logos/phoenix-logo.png";
+import graphql from "./assets/logos/graphql-logo.png";
+import postgresql from "./assets/logos/postgresql-logo.png";
+import mongodb from "./assets/logos/mongodb-logo.png";
+import aws from "./assets/logos/aws-logo.png";
+import firebase from "./assets/logos/firebase-logo.png";
+import figma from "./assets/logos/figma-logo.png";
+import wordpress from "./assets/logos/wordpress-logo.png";
+import styledComponents from "./assets/logos/styled-components-logo.png";
+import cypress from "./assets/logos/cypress-logo.png";
+import expo from "./assets/logos/expo-logo.png";
+import storybook from "./assets/logos/storybook-logo.png";
+import contentful from "./assets/logos/contentful-logo.png";
+import mailchimp from "./assets/logos/mailchimp-logo.png";
+import hubspot from "./assets/logos/hubspot-logo.png";
+import googleAnalytics from "./assets/logos/google-analytics-logo.png";
 
 export const menuItems = [
   { label: "About", id: "about" },
@@ -129,6 +134,36 @@ export const techLogos = [
     alt: "figma logo",
   },
   {
+    name: "storybook",
+    path: storybook,
+    alt: "storybook logo",
+  },
+  {
+    name: "aws",
+    path: aws,
+    alt: "aws logo",
+  },
+  {
+    name: "contentful",
+    path: contentful,
+    alt: "contentful logo",
+  },
+  {
+    name: "google analytics",
+    path: googleAnalytics,
+    alt: "google analytics logo",
+  },
+  {
+    name: "mailchimp",
+    path: mailchimp,
+    alt: "mailchimp logo",
+  },
+  {
+    name: "hubspot",
+    path: hubspot,
+    alt: "hubspot logo",
+  },
+  {
     name: "wordpress",
     path: wordpress,
     alt: "wordpress logo",
@@ -145,6 +180,11 @@ export const cimpleTech = [
     name: "next.js",
     path: nextjs,
     alt: "next.js logo",
+  },
+  {
+    name: "node.js",
+    path: nodejs,
+    alt: "styled components logo",
   },
   {
     name: "elixir",
@@ -190,9 +230,95 @@ export const vibeLifeTech = [
     alt: "figma logo",
   },
   {
-    name: "wordpress",
-    path: wordpress,
+    name: "next.js",
+    path: nextjs,
     alt: "wordpress logo",
+  },
+  {
+    name: "styled components",
+    path: styledComponents,
+    alt: "styled components logo",
+  },
+  {
+    name: "contentful",
+    path: contentful,
+    alt: "contentful logo",
+  },
+  {
+    name: "mailchimp",
+    path: mailchimp,
+    alt: "mailchimp logo",
+  },
+  {
+    name: "google analytics",
+    path: googleAnalytics,
+    alt: "google analytics logo",
+  },
+];
+
+export const marieTech = [
+  {
+    name: "react native",
+    path: reactNative,
+    alt: "figma logo",
+  },
+  {
+    name: "typescript",
+    path: wordpress,
+    alt: "typescript logo",
+  },
+  {
+    name: "styled components",
+    path: styledComponents,
+    alt: "styled components logo",
+  },
+  {
+    name: "expo",
+    path: expo,
+    alt: "expo logo",
+  },
+  {
+    firebase,
+    alt: "firebase logo",
+    path: firebase,
+  },
+];
+
+export const orbitalTech = [
+  {
+    name: "react",
+    path: react,
+    alt: "react logo",
+  },
+  {
+    name: "typescript",
+    path: wordpress,
+    alt: "typescript logo",
+  },
+  {
+    name: "styled components",
+    path: styledComponents,
+    alt: "styled components logo",
+  },
+  {
+    name: "storybook",
+    path: storybook,
+    alt: "storybook logo",
+  },
+  {
+    name: "graphql",
+    path: graphql,
+    alt: "graphql logo",
+  },
+  {
+    name: "postgresql",
+    path: postgresql,
+    alt: "postgresql logo",
+  },
+  {
+    name: "aws",
+    path: aws,
+    alt: "aws logo",
   },
 ];
 

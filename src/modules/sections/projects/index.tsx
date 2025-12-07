@@ -1,38 +1,84 @@
 import { useState } from "react";
-import {
-  Body,
-  Box,
-  H2,
-  H3,
-  SecondaryButton,
-  Toggle,
-  Wrapper,
-} from "../../../common/UI";
+import { Box, H2, Toggle, Wrapper } from "../../../common/UI";
 
-import CimpleMockup from "../../../assets/cimple-mockup.png";
-import VibeLifeMockup from "../../../assets/vibe-life-mockup.png";
-import PortfolioMockup from "../../../assets/portfolio-mockup.png";
-import ExperienceMockup from "../../../assets/experience-mockup.png";
-
-import {
-  LogoFlexProjects,
-  LogoProjects,
-  ProjectContainer,
-  ProjectInfoContainer,
-  SectionContainer,
-  SectonWrapper,
-  StyledMultiScreenMockup,
-} from "../Sections.style";
+import CimpleMockup from "../../../assets/mockups/cimple-mockup.png";
+import VibeLifeMockup from "../../../assets/mockups/vibe-life-mockup.png";
+import PortfolioMockup from "../../../assets/mockups/portfolio-mockup.png";
+import ExperienceMockup from "../../../assets/mockups/experience-mockup.png";
+import MarieMockup from "../../../assets/mockups/marie-mockup.png";
+import OrbitalMockup from "../../../assets/mockups/orbital-mockup.png";
+import { SectionContainer, SectonWrapper } from "../Sections.style";
 import { ToggleVariant } from "../../../common/UI/Toggle";
 import {
   cimpleTech,
   experienceTech,
+  orbitalTech,
   portfolioTech,
   vibeLifeTech,
 } from "../../../utils";
+import { ProjectComponent } from "./ProjectComponent";
 
 const Projects = () => {
   const [isActive, setIsActive] = useState<ToggleVariant>("professional");
+
+  const professionalProjects = [
+    {
+      title: "Orbital",
+      description:
+        "I'm a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional currencies and cryptocurrencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I've rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and  I'm currently building mass payments functionality. I'm part of the product team managing the payment dashboard and responding to client needs.",
+      mockup: OrbitalMockup,
+
+      tech: orbitalTech,
+    },
+    {
+      title: "Vibe Life",
+      description:
+        "Vibe Life is a Community Interest Company making fitness accessible to all and reducing health inequalities within deprived communities. I built their complete platform using Next.js, TypeScript, Contentful CMS, Styled Components, Resend, and Mailchimp. The headless CMS architecture enables the team to manage events and blog posts independently, while automated email workflows handle newsletter subscriptions and contact form submissions. I handled everything from architecture and development to deployment and ongoing maintenance.",
+      tech: vibeLifeTech,
+      mockup: VibeLifeMockup,
+      href: "https://vibelife.org/",
+      buttonText: "View Site",
+    },
+    {
+      title: "Cimple",
+      description:
+        "I worked as a Full-stack Developer at Cimple, a B2B procurement platform that simplifies procurement for businesses. Using TypeScript, Next.js, Styled Components, Cypress, Elixir, Phoenix, GraphQL, PostgreSQL and AWS, I built features for the procurement opportunity lifecycle—from creation and supplier applications through to evaluation and contract awarding. I occasionally take on additional contract work for Cimple when availability allows.",
+      tech: cimpleTech,
+      mockup: CimpleMockup,
+      href: "https://cimple.uk/",
+      buttonText: "View Site",
+    },
+    {
+      title: "Marie",
+      description:
+        "During my time at Future Arc, I helped design and build a mobile application for Marie Curie to support unpaid carers of terminally ill patients. The app allows users to record daily journals, access helpful resources, and complete wellbeing check-ins. I worked closely with the design team to create a simple, accessible interface and contributed to the front-end development of the core features and user flows.",
+      tech: vibeLifeTech,
+      mockup: MarieMockup,
+      href: "https://vibelife.org/",
+    },
+  ];
+
+  const personalProjects = [
+    {
+      title: "Portfolio",
+      description:
+        "My portfolio was designed with Figma and created using TypeScript, React and Styled Components. Here I wanted to emphasise the responsiveness of this web application as it is suitable for both phone, tablet and desktop.",
+      tech: portfolioTech,
+      mockup: PortfolioMockup,
+      href: "https://github.com/jbravoh/jayann-portfolio",
+      buttonText: "View Github Repo",
+    },
+    {
+      title: "Experience",
+      description:
+        "Experience was created using CSS, React, Node.js and MongoDB. This web application connects individuals looking for opportunities and businesses providing those opportunities. It was created to help people develop skills, explore industries and improve employability through projects, volunteer work and internships.",
+      tech: experienceTech,
+      mockup: ExperienceMockup,
+      href: "https://github.com/jbravoh/black-codher-personal-project",
+      buttonText: "View Github Repo",
+    },
+  ];
+
   return (
     <Box id="projects">
       <SectionContainer>
@@ -42,140 +88,21 @@ const Projects = () => {
             <Toggle isActive={isActive} setIsActive={setIsActive} />
             {isActive === "professional" ? (
               <>
-                {/* CIMPLE */}
-                <ProjectContainer>
-                  <Box>
-                    <StyledMultiScreenMockup src={CimpleMockup} />
-                  </Box>
-                  <ProjectInfoContainer>
-                    <H3>Cimple</H3>
-                    <Body fontWeight="normal">
-                      I&apos;m currently a Full-stack developer at Cimple and we
-                      use TypeScript, Next.js, Styled Components, Cypress,
-                      Elixir, Phoenix, GraphQL, PostgreSQL and AWS. Cimple
-                      understands the complexities in procurement and has
-                      created a B2B procurement platform that aims to make it
-                      more accessible and intuitive for everyone.
-                    </Body>
-                    <LogoFlexProjects>
-                      {cimpleTech.map((logo) => {
-                        return (
-                          <Box key={logo.name}>
-                            <LogoProjects src={logo.path} alt={logo.alt} />
-                          </Box>
-                        );
-                      })}
-                    </LogoFlexProjects>
-                    <SecondaryButton
-                      href="https://cimple.uk/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Site
-                    </SecondaryButton>
-                  </ProjectInfoContainer>
-                </ProjectContainer>
-
+                {/* ORBITAL */}
+                <ProjectComponent {...professionalProjects[0]} />
                 {/* VIBE LIFE */}
-                <ProjectContainer>
-                  <Box>
-                    <StyledMultiScreenMockup src={VibeLifeMockup} />
-                  </Box>
-                  <ProjectInfoContainer>
-                    <H3>Vibe Life</H3>
-                    <Body fontWeight="normal">
-                      Vibe Life is a Community Interest Company founded in 2022
-                      with the vision of making physical activity and wellbeing
-                      accessible for all and reducing health inequalities within
-                      deprived communities. I designed and built this website
-                      using Figma and Wordpress to accommodate the business
-                      needs, with the user experience at the heart of the
-                      process. This is work in progress and will develop as the
-                      business grows.
-                    </Body>
-                    <LogoFlexProjects>
-                      {vibeLifeTech.map((logo) => {
-                        return (
-                          <Box key={logo.name}>
-                            <LogoProjects src={logo.path} alt={logo.alt} />
-                          </Box>
-                        );
-                      })}
-                    </LogoFlexProjects>
-                    <SecondaryButton
-                      href="https://vibelife.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Site
-                    </SecondaryButton>
-                  </ProjectInfoContainer>
-                </ProjectContainer>
+                <ProjectComponent {...professionalProjects[1]} />
+                {/* CIMPLE */}
+                <ProjectComponent {...professionalProjects[2]} />
+                {/* Marie */}
+                <ProjectComponent {...professionalProjects[3]} />
               </>
             ) : (
               <>
-                <ProjectContainer>
-                  <Box>
-                    <StyledMultiScreenMockup src={PortfolioMockup} />
-                  </Box>
-                  <ProjectInfoContainer>
-                    <H3>Portfolio</H3>
-                    <Body fontWeight="normal">
-                      My portfolio was designed with Figma and created using
-                      TypeScript, React and Styled Components. Here I wanted to
-                      emphasise the responsiveness of this web application as it
-                      is suitable for both phone, tablet and desktop.
-                    </Body>
-                    <LogoFlexProjects>
-                      {portfolioTech.map((logo) => {
-                        return (
-                          <Box key={logo.name}>
-                            <LogoProjects src={logo.path} alt={logo.alt} />
-                          </Box>
-                        );
-                      })}
-                    </LogoFlexProjects>
-                    <SecondaryButton
-                      href="https://github.com/jbravoh/jayann-portfolio"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Github Repo
-                    </SecondaryButton>
-                  </ProjectInfoContainer>
-                </ProjectContainer>
-                <ProjectContainer>
-                  <Box>
-                    <StyledMultiScreenMockup src={ExperienceMockup} />
-                  </Box>
-                  <ProjectInfoContainer>
-                    <H3>Experience</H3>
-                    <Body fontWeight="normal">
-                      Experience was created using CSS, React, Node.js and
-                      MongoDB. This web application connects individuals looking
-                      for opportunities and businesses providing those
-                      opportunities. It was created to help people develop
-                      skills, explore industries and improve employability
-                      through projects, volunteer work and internships.
-                    </Body>
-                    <LogoFlexProjects>
-                      {experienceTech.map((logo) => {
-                        return (
-                          <Box key={logo.name}>
-                            <LogoProjects src={logo.path} alt={logo.alt} />
-                          </Box>
-                        );
-                      })}
-                    </LogoFlexProjects>
-                    <SecondaryButton
-                      href="https://github.com/jbravoh/black-codher-personal-project"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Github Repo
-                    </SecondaryButton>
-                  </ProjectInfoContainer>
-                </ProjectContainer>
+                {/* PORTFOLIO */}
+                <ProjectComponent {...personalProjects[0]} />
+                {/* EXPERIENCE */}
+                <ProjectComponent {...personalProjects[1]} />
               </>
             )}
           </SectonWrapper>
