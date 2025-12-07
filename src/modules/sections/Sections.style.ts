@@ -68,7 +68,6 @@ export const LogoFlex = styled(Flex)`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
   gap: 2rem;
   margin: 2rem 0;
 
