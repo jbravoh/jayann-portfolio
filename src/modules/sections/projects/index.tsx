@@ -50,10 +50,9 @@ const Projects = () => {
     {
       title: "Marie",
       description:
-        "During my time at Future Arc, I helped design and build a mobile application for Marie Curie to support unpaid carers of terminally ill patients. The app allows users to record daily journals, access helpful resources, and complete wellbeing check-ins. I worked closely with the design team to create a simple, accessible interface and contributed to the front-end development of the core features and user flows.",
+        "During my time at Future Arc, I helped design and build a mobile application for Marie Curie to support unpaid carers of terminally ill patients. The app allows users to record daily journals, access helpful resources, and complete wellbeing check-ins. I worked closely with the design team to create a simple, accessible interface and contributed to the full-stack development of the core features and user flows.",
       tech: vibeLifeTech,
       mockup: MarieMockup,
-
     },
   ];
 
