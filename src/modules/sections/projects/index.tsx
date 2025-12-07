@@ -12,6 +12,7 @@ import { ToggleVariant } from "../../../common/UI/Toggle";
 import {
   cimpleTech,
   experienceTech,
+  marieTech,
   orbitalTech,
   portfolioTech,
   vibeLifeTech,
@@ -25,7 +26,7 @@ const Projects = () => {
     {
       title: "Orbital",
       description:
-        "I'm a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional currencies and cryptocurrencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I've rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and  I'm currently building mass payments functionality. I'm part of the product team managing the payment dashboard and responding to client needs.",
+        "I'm a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional and  crypto currencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I've rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and  I'm currently building mass payments functionality. I'm part of the product team managing the payment dashboard and responding to client needs.",
       mockup: OrbitalMockup,
       tech: orbitalTech,
     },
@@ -51,7 +52,7 @@ const Projects = () => {
       title: "Marie",
       description:
         "During my time at Future Arc, I helped design and build a mobile application for Marie Curie to support unpaid carers of terminally ill patients. The app allows users to record daily journals, access helpful resources, and complete wellbeing check-ins. I worked closely with the design team to create a simple, accessible interface and contributed to the full-stack development of the core features and user flows.",
-      tech: vibeLifeTech,
+      tech: marieTech,
       mockup: MarieMockup,
     },
   ];

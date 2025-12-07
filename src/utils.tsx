@@ -139,11 +139,6 @@ export const techLogos = [
     alt: "storybook logo",
   },
   {
-    name: "aws",
-    path: aws,
-    alt: "aws logo",
-  },
-  {
     name: "contentful",
     path: contentful,
     alt: "contentful logo",
@@ -278,7 +273,7 @@ export const marieTech = [
     alt: "expo logo",
   },
   {
-    firebase,
+    name: "firebase",
     alt: "firebase logo",
     path: firebase,
   },

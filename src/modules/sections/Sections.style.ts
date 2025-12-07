@@ -92,7 +92,6 @@ export const ProjectContainer = styled(Flex)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
   gap: 2rem;
   width: 100%;
 `;
