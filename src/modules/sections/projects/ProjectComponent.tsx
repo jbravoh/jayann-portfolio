@@ -49,7 +49,7 @@ const ProjectComponent = ({
           </SecondaryButton>
         )}
       </ProjectInfoContainer>
-      <Box style={{ maxWidth: "1000px" }}>
+      <Box style={{ maxWidth: "1000px", marginTop: "2rem" }}>
         <StyledMultiScreenMockup src={mockup} />
       </Box>
     </ProjectContainer>

@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: "Orbital",
       description:
-        "I'm a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional and  crypto currencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I've rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and  I'm currently building mass payments functionality. I'm part of the product team managing the payment dashboard and responding to client needs.",
+        "I'm a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional and  crypto currencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I've rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and  I'm currently building mass payments functionality.",
       mockup: OrbitalMockup,
       tech: orbitalTech,
     },
@@ -42,7 +42,7 @@ const Projects = () => {
     {
       title: "Cimple",
       description:
-        "I worked as a Full-stack Developer at Cimple, a B2B procurement platform that simplifies procurement for businesses. Using TypeScript, Next.js, Styled Components, Cypress, Node.js, Elixir, Phoenix, GraphQL, PostgreSQL and AWS, I built features for the procurement opportunity lifecycle—from creation and supplier applications through to evaluation and contract awarding. I occasionally take on additional contract work for Cimple when availability allows.",
+        "I worked as a Full-stack Developer at Cimple, a B2B procurement platform that simplifies procurement for businesses. Using TypeScript, Next.js, Styled Components, Cypress, Node.js, Elixir, Phoenix, GraphQL, PostgreSQL and AWS, I built features for the procurement opportunity lifecycle—from creation and supplier applications through to evaluation and contract awarding.",
       tech: cimpleTech,
       mockup: CimpleMockup,
       href: "https://cimple.uk/",
@@ -61,7 +61,7 @@ const Projects = () => {
     {
       title: "Portfolio",
       description:
-        "My portfolio was designed with Figma and created using TypeScript, React and Styled Components. Here I wanted to emphasise the responsiveness of this web application as it is suitable for both phone, tablet and desktop.",
+        "My portfolio was designed with Figma and created using TypeScript, React and Styled Components. Here I wanted to emphasise the responsiveness of this web application as it is suitable for phone, tablet and desktop.",
       tech: portfolioTech,
       mockup: PortfolioMockup,
       href: "https://github.com/jbravoh/jayann-portfolio",
