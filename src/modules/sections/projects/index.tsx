@@ -7,9 +7,11 @@ import PortfolioMockup from "../../../assets/mockups/portfolio-mockup.png";
 import ExperienceMockup from "../../../assets/mockups/experience-mockup.png";
 import MarieMockup from "../../../assets/mockups/marie-mockup.png";
 import OrbitalMockup from "../../../assets/mockups/orbital-mockup.png";
+import CapiMockup from "../../../assets/mockups/capi-mockup.png";
 import { SectionContainer, SectonWrapper } from "../Sections.style";
 import { ToggleVariant } from "../../../common/UI/Toggle";
 import {
+  capiTech,
   cimpleTech,
   experienceTech,
   marieTech,
@@ -24,9 +26,18 @@ const Projects = () => {
 
   const professionalProjects = [
     {
+      title: "Capi",
+      description:
+        "I worked as a Senior Software Engineer at Capi, a tech-for-good B2B platform helping African businesses make cross-border payments, processing $1bn+ a year. Using TypeScript, React, Next.js, Node.js, Express, tRPC, Temporal, PostgreSQL, Supabase, Hasura and Storybook, I built the Crown Agents Bank payout integration end to end, automating a rail that carried over a quarter of payout volume, supported two further payout provider integrations and built exchange rate syncing with XE, contributing to a record quarter of 8,426 payouts worth $313.9M. I led the front-end foundations for the new transactions flow, integrating the wallet with document uploads and top-up alerts, and led the Storybook rollout to create a shared component library across our apps. As the main engineering contact for Operations on Crown Agents Bank, I cut median issue resolution time from 15 hours to 2.",
+      mockup: CapiMockup,
+      tech: capiTech,
+      href: "https://capimoney.com/",
+      buttonText: "View Site",
+    },
+    {
       title: "Orbital",
       description:
-        "I'm a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional and  crypto currencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I've rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and  I'm currently building mass payments functionality.",
+        "I worked as a Frontend Engineer at Orbital, a global payments platform processing £12bn+ annually across traditional and crypto currencies. Using React, TypeScript, GraphQL, AWS, Styled Components, and Storybook, I rebuilt the user management system, implemented compliance features, and contributed to two design system rebuilds including a full rebrand. I refactored the codebase during our REST to GraphQL migration, made the platform responsive down to tablet, and built mass payments functionality.",
       mockup: OrbitalMockup,
       tech: orbitalTech,
     },
@@ -87,14 +98,16 @@ const Projects = () => {
             <Toggle isActive={isActive} setIsActive={setIsActive} />
             {isActive === "professional" ? (
               <>
-                {/* ORBITAL */}
+                {/* CAPI */}
                 <ProjectComponent {...professionalProjects[0]} />
-                {/* VIBE LIFE */}
+                {/* ORBITAL */}
                 <ProjectComponent {...professionalProjects[1]} />
-                {/* CIMPLE */}
+                {/* VIBE LIFE */}
                 <ProjectComponent {...professionalProjects[2]} />
-                {/* Marie */}
+                {/* CIMPLE */}
                 <ProjectComponent {...professionalProjects[3]} />
+                {/* Marie */}
+                <ProjectComponent {...professionalProjects[4]} />
               </>
             ) : (
               <>

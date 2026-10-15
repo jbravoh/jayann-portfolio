@@ -179,7 +179,7 @@ export const cimpleTech = [
   {
     name: "node.js",
     path: nodejs,
-    alt: "styled components logo",
+    alt: "node.js logo",
   },
   {
     name: "elixir",
@@ -227,7 +227,7 @@ export const vibeLifeTech = [
   {
     name: "next.js",
     path: nextjs,
-    alt: "wordpress logo",
+    alt: "next.js logo",
   },
   {
     name: "styled components",
@@ -255,11 +255,11 @@ export const marieTech = [
   {
     name: "react native",
     path: reactNative,
-    alt: "figma logo",
+    alt: "react native logo",
   },
   {
     name: "typescript",
-    path: wordpress,
+    path: typescript,
     alt: "typescript logo",
   },
   {
@@ -279,6 +279,49 @@ export const marieTech = [
   },
 ];
 
+export const capiTech = [
+  {
+    name: "typescript",
+    path: typescript,
+    alt: "typescript logo",
+  },
+  {
+    name: "react",
+    path: react,
+    alt: "react logo",
+  },
+  {
+    name: "next.js",
+    path: nextjs,
+    alt: "next.js logo",
+  },
+  {
+    name: "node.js",
+    path: nodejs,
+    alt: "node.js logo",
+  },
+  {
+    name: "express",
+    path: express,
+    alt: "express logo",
+  },
+  {
+    name: "postgresql",
+    path: postgresql,
+    alt: "postgresql logo",
+  },
+  {
+    name: "graphql",
+    path: graphql,
+    alt: "graphql logo",
+  },
+  {
+    name: "storybook",
+    path: storybook,
+    alt: "storybook logo",
+  },
+];
+
 export const orbitalTech = [
   {
     name: "react",
@@ -287,7 +330,7 @@ export const orbitalTech = [
   },
   {
     name: "typescript",
-    path: wordpress,
+    path: typescript,
     alt: "typescript logo",
   },
   {
