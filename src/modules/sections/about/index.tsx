@@ -14,7 +14,7 @@ const About = () => {
             Welcome to my portfolio!
           </Body>
           <Body fontWeight="normal" style={{ textAlign: "center" }}>
-            I&apos;m a Full-stack Engineer with 3+ years of experience,
+            I&apos;m a Full-stack Engineer with 5+ years of experience,
             currently specializing in frontend development at Orbital, a global
             payments platform. My expertise primarily lies in the JavaScript
             stack, but my curiosity and creativity drive me to explore new

@@ -24,6 +24,9 @@ import contentful from "./assets/logos/contentful-logo.png";
 import mailchimp from "./assets/logos/mailchimp-logo.png";
 import hubspot from "./assets/logos/hubspot-logo.png";
 import googleAnalytics from "./assets/logos/google-analytics-logo.png";
+import astro from "./assets/logos/astro-logo.svg";
+import resend from "./assets/logos/resend-logo.svg";
+import cloudflare from "./assets/logos/cloudflare-logo.svg";
 
 export const menuItems = [
   { label: "About", id: "about" },
@@ -248,6 +251,29 @@ export const vibeLifeTech = [
     name: "google analytics",
     path: googleAnalytics,
     alt: "google analytics logo",
+  },
+];
+
+export const rebeccaJaneWellnessTech = [
+  {
+    name: "astro",
+    path: astro,
+    alt: "astro logo",
+  },
+  {
+    name: "react",
+    path: react,
+    alt: "react logo",
+  },
+  {
+    name: "resend",
+    path: resend,
+    alt: "resend logo",
+  },
+  {
+    name: "cloudflare",
+    path: cloudflare,
+    alt: "cloudflare logo",
   },
 ];
 

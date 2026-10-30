@@ -8,6 +8,7 @@ import ExperienceMockup from "../../../assets/mockups/experience-mockup.png";
 import MarieMockup from "../../../assets/mockups/marie-mockup.png";
 import OrbitalMockup from "../../../assets/mockups/orbital-mockup.png";
 import CapiMockup from "../../../assets/mockups/capi-mockup.png";
+import RebeccaJaneWellnessMockup from "../../../assets/mockups/rebecca-jane-wellness-mockup.png";
 import { SectionContainer, SectonWrapper } from "../Sections.style";
 import { ToggleVariant } from "../../../common/UI/Toggle";
 import {
@@ -17,6 +18,7 @@ import {
   marieTech,
   orbitalTech,
   portfolioTech,
+  rebeccaJaneWellnessTech,
   vibeLifeTech,
 } from "../../../utils";
 import { ProjectComponent } from "./ProjectComponent";
@@ -28,7 +30,7 @@ const Projects = () => {
     {
       title: "Capi",
       description:
-        "I worked as a Senior Software Engineer at Capi, a tech-for-good B2B platform helping African businesses make cross-border payments, processing $1bn+ a year. Using TypeScript, React, Next.js, Node.js, Express, tRPC, Temporal, PostgreSQL, Supabase, Hasura and Storybook, I built the Crown Agents Bank payout integration end to end, automating a rail that carried over a quarter of payout volume, supported two further payout provider integrations and built exchange rate syncing with XE, contributing to a record quarter of 8,426 payouts worth $313.9M. I led the front-end foundations for the new transactions flow, integrating the wallet with document uploads and top-up alerts, and led the Storybook rollout to create a shared component library across our apps. As the main engineering contact for Operations on Crown Agents Bank, I cut median issue resolution time from 15 hours to 2.",
+        "I worked as a Senior Software Engineer at Capi, a tech-for-good B2B platform helping African businesses make cross-border payments, processing $1bn+ a year. Using TypeScript, Next.js, Node.js, Express, Temporal, PostgreSQL, Supabase, Hasura and Storybook, I built the Crown Agents Bank payout integration end to end, automating a rail that carried over a quarter of payout volume, supported two further payout provider integrations and built exchange rate syncing with XE, contributing to a record quarter of 8,426 payouts worth $313.9M. I led the front-end foundations for the new transactions flow, integrating the wallet with document uploads and top-up alerts, and led the Storybook rollout to create a shared component library across our apps.",
       mockup: CapiMockup,
       tech: capiTech,
       href: "https://capimoney.com/",
@@ -48,6 +50,15 @@ const Projects = () => {
       tech: vibeLifeTech,
       mockup: VibeLifeMockup,
       href: "https://vibelife.org/",
+      buttonText: "View Site",
+    },
+    {
+      title: "Rebecca Jane Wellness",
+      description:
+        "Rebecca Jane Wellness runs Pilates, Yoga and Chair Yoga classes for the Aldridge and Walsall community. I built their website using Astro and React. The fast, responsive site helps new clients explore classes, check the timetable, browse the gallery and read testimonials, while the contact form sends enquiries straight to Rebecca's inbox using Resend, with Cloudflare Turnstile protecting it from bots.",
+      tech: rebeccaJaneWellnessTech,
+      mockup: RebeccaJaneWellnessMockup,
+      href: "https://rebeccajanewellness.co.uk/",
       buttonText: "View Site",
     },
     {
@@ -104,10 +115,12 @@ const Projects = () => {
                 <ProjectComponent {...professionalProjects[1]} />
                 {/* VIBE LIFE */}
                 <ProjectComponent {...professionalProjects[2]} />
-                {/* CIMPLE */}
+                {/* REBECCA JANE WELLNESS */}
                 <ProjectComponent {...professionalProjects[3]} />
-                {/* Marie */}
+                {/* CIMPLE */}
                 <ProjectComponent {...professionalProjects[4]} />
+                {/* Marie */}
+                <ProjectComponent {...professionalProjects[5]} />
               </>
             ) : (
               <>
