@@ -2,9 +2,6 @@
   command = "yarn build"
   publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "26"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
