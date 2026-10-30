@@ -27,6 +27,7 @@ import googleAnalytics from "./assets/logos/google-analytics-logo.png";
 import astro from "./assets/logos/astro-logo.svg";
 import resend from "./assets/logos/resend-logo.svg";
 import cloudflare from "./assets/logos/cloudflare-logo.svg";
+import temporal from "./assets/logos/temporal-logo.svg";
 
 export const menuItems = [
   { label: "About", id: "about" },
@@ -77,6 +78,11 @@ export const techLogos = [
     alt: "next.js logo",
   },
   {
+    name: "astro",
+    path: astro,
+    alt: "astro logo",
+  },
+  {
     name: "cypress",
     path: cypress,
     alt: "cypress logo",
@@ -90,6 +96,11 @@ export const techLogos = [
     name: "express",
     path: express,
     alt: "express logo",
+  },
+  {
+    name: "temporal",
+    path: temporal,
+    alt: "temporal logo",
   },
   {
     name: "elixir",
@@ -120,6 +131,11 @@ export const techLogos = [
     name: "aws",
     path: aws,
     alt: "aws logo",
+  },
+  {
+    name: "cloudflare",
+    path: cloudflare,
+    alt: "cloudflare logo",
   },
   {
     name: "firebase",
@@ -155,6 +171,11 @@ export const techLogos = [
     name: "mailchimp",
     path: mailchimp,
     alt: "mailchimp logo",
+  },
+  {
+    name: "resend",
+    path: resend,
+    alt: "resend logo",
   },
   {
     name: "hubspot",
@@ -330,6 +351,11 @@ export const capiTech = [
     name: "express",
     path: express,
     alt: "express logo",
+  },
+  {
+    name: "temporal",
+    path: temporal,
+    alt: "temporal logo",
   },
   {
     name: "postgresql",

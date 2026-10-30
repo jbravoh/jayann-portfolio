@@ -15,8 +15,7 @@ const About = () => {
           </Body>
           <Body fontWeight="normal" style={{ textAlign: "center" }}>
             I&apos;m a Full-stack Engineer with 5+ years of experience,
-            currently specializing in frontend development at Orbital, a global
-            payments platform. My expertise primarily lies in the JavaScript
+            specialising in frontend development. My expertise primarily lies in the JavaScript
             stack, but my curiosity and creativity drive me to explore new
             technologies. Below, you&apos;ll discover a showcase of my
             professional and personal projects, highlighting my journey in
