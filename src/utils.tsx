@@ -269,6 +269,11 @@ export const vibeLifeTech = [
     alt: "mailchimp logo",
   },
   {
+    name: "resend",
+    path: resend,
+    alt: "resend logo",
+  },
+  {
     name: "google analytics",
     path: googleAnalytics,
     alt: "google analytics logo",
