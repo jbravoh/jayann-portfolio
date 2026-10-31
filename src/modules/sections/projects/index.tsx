@@ -28,7 +28,7 @@ const Projects = () => {
 
   const professionalProjects = [
     {
-      title: "Capi",
+      title: "Capi Money",
       description:
         "I worked as a Senior Software Engineer at Capi, a tech-for-good B2B platform helping African businesses make cross-border payments, processing $1bn+ a year. Using TypeScript, Next.js, Node.js, Express, Temporal, PostgreSQL, Supabase, Hasura and Storybook, I built the Crown Agents Bank payout integration end to end, automating a rail that carried over a quarter of payout volume, supported two further payout provider integrations and built exchange rate syncing with XE, contributing to a record quarter of 8,426 payouts worth $313.9M. I led the front-end foundations for the new transactions flow, integrating the wallet with document uploads and top-up alerts, and led the Storybook rollout to create a shared component library across our apps.",
       mockup: CapiMockup,
